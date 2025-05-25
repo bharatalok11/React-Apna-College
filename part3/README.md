@@ -1,12 +1,61 @@
-# React + Vite
+# React Interactive Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Demonstrates various interactive components and form handling using React hooks and modern practices.
 
-Currently, two official plugins are available:
+## Folder Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The main components are:
+- `App.jsx` - Main application component
+- `Counter.jsx` - Counter component with state management
+- `LikeButton.jsx` - Interactive like button component
+- `Form.jsx` - Form handling component
+- `Button.jsx` - Reusable button component
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Interactive counter functionality
+- Like button with state management
+- Form handling and validation
+- Reusable button components
+- FontAwesome icons integration
+
+## Getting Started
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start the development server:
+```bash
+npm run dev
+```
+
+
+## Tech Stack
+
+- React 19.1.0
+- Vite 6.3.5
+- FontAwesome Icons
+- Modern JavaScript features
+
+## Dependencies
+
+- @fortawesome/free-regular-svg-icons
+- @fortawesome/free-solid-svg-icons
+- @fortawesome/react-fontawesome
+
+## ESLint Configuration
+
+The project includes ESLint configuration for maintaining code quality. For production applications, consider:
+- Using TypeScript with type-aware lint rules
+- Following the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for TypeScript integration
+- Implementing [`typescript-eslint`](https://typescript-eslint.io) for enhanced type checking
+<hr/>
+<div align="center">
+
+Created by [bharatalok11](https://github.com/bharatalok11)
+
+**Happy Coding! ❤️**
+
+</div>
