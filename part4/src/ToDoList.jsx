@@ -14,11 +14,7 @@ export default function ToDoList() {
     function handleTaskAdd(event) {
         if(task.trim() === "") return;
         if(editId === null){
-            let newTask = {
-                id : uuidv4(),
-                work : task
-            };
-            setTodos(prevList=> [...prevList,newTask]);
+            setTodos(prevList=> [...prevList,{ id : uuidv4(), work : task , isDone:false}]);
         }else{
             //editing existing task
             setTodos(prevList =>
@@ -45,6 +41,12 @@ export default function ToDoList() {
         setEditId(idToEdit);
     }
 
+    function markedDone(idToMark){
+        setTodos(prevList => prevList.map((item)=>
+            item.id===idToMark ? { ...item, isDone:true} : item
+        ))
+    }
+
     return (
         <div>
             <h1>To Do List</h1>
@@ -61,9 +63,10 @@ export default function ToDoList() {
                 <ul>
                     {todos.map(item => (
                     <li key={item.id}>
-                        {item.work} &nbsp; &nbsp;
-                        <button onClick={() => editTask(item.id)}>Edit</button>
+                        <span  style={item.isDone===true ? {textDecoration: 'line-through'} : {}}>{item.work} &nbsp; &nbsp;</span>
+                        <button disabled={item.isDone}  onClick={() => editTask(item.id)}>Edit</button>
                         <button onClick={() => deleteTask(item.id)}>Delete</button>
+                        <button disabled={item.isDone} onClick={() => markedDone(item.id)}>{item.isDone===false ? 'Mark as Done' : 'Done✅'}</button>
                     </li>
                     ))}
                 </ul>
