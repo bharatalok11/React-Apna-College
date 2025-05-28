@@ -3,7 +3,7 @@ import Lottery from "./Lottety";
 function App() {
   return (
     <>
-      <Lottery/>
+      <Lottery n={4} winningSum={15} />
     </>
   )
 }
