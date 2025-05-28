@@ -1,12 +1,82 @@
-# React + Vite
+# Lottery Ticket Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. A React-based lottery ticket generator  that creates random lottery numbers. 
+2. Demonstrates the use of React components, state management, and modern web development practices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Generate random lottery numbers
+- Clean and modern user interface
+- Component-based architecture
 
-## Expanding the ESLint configuration
+## Images
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Screenshots
+
+![Lottery Start Screen](./src/assets/lotteryStart.png)
+*Initial lottery ticket generation screen*
+
+![Lottery Won Screen](./src/assets/lotteryWon.png)
+*Winning lottery ticket screen*
+
+
+
+## Technologies Used
+
+- React 19
+- Vite
+- CSS3
+- ESLint for code quality
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd part5
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+The application will be available at `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+part5/
+├── src/
+│   ├── assets/         # Static assets and images
+│   ├── App.jsx         # Main application component
+│   ├── Lottery.jsx     # Lottery component
+│   ├── Ticket.jsx      # Ticket component
+│   ├── TicketNum.jsx   # Ticket number component
+│   └── helper.js       # Utility functions
+├── public/             # Public assets
+└── package.json        # Project dependencies and scripts
+```
+
+<hr/>
+<div align="center">
+
+Created by [bharatalok11](https://github.com/bharatalok11)
+
+**Happy Coding! ❤️**
+
+</div>
