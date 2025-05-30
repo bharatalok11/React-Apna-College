@@ -1,12 +1,72 @@
-# React + Vite
+# React Joke & Feedback App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Demonstrated API integration, form handling with validation, and dynamic comments display.
+2. Showcases modern React practices, including hooks, state management, and component-based architecture.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches and displays random jokes from an external API
+- Feedback form with validation using Formik and Yup
+- Dynamic comments section with ratings
+- Component-based structure
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- Formik & Yup (form handling and validation)
+- CSS3
+- ESLint for code quality
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd part6
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The demo will be available at `http://localhost:5173`
+
+
+## Folder Structure
+
+```
+part6/
+├── src/
+│   ├── App.jsx           # Main application component
+│   ├── Joker.jsx         # Joke generator component (API integration)
+│   ├── Form.jsx          # Basic form handling component
+│   ├── CommentsForm.jsx  # Feedback form with Formik & Yup
+│   ├── comment.jsx       # Comments display component
+│   ├── assets/           # Static assets
+│   └── ...               # Styles and other files
+├── public/               # Public assets
+└── package.json          # Project dependencies and scripts
+```
+
+<hr/>
+<div align="center">
+
+Created by [bharatalok11](https://github.com/bharatalok11)
+
+**Happy Coding! ❤️**
+
+</div>
