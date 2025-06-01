@@ -1,10 +1,15 @@
 import './App.css'
+import Todo from './components/Todo'
+import {Provider} from 'react-redux';
+import { store } from './app/store';
+
 function App() {
   return (
-    <div>
-      <h1>Redux React</h1>
-      <p>Welcome to the Redux React application!</p>
-    </div>
+    <>
+      <Provider store={store}>
+          <Todo />
+      </Provider>
+    </>
   )
 }
 export default App;
