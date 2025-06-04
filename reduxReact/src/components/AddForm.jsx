@@ -10,19 +10,21 @@ export default function AddForm(){
         event.preventDefault();
         console.log(task);
         dispatch(addTodo(task));
+        setTask("");
     }
 
     return(
         <>
             <form onSubmit={submitHandler}>
-                <input type="text" 
+                <input 
+                    type="text" 
                     name="task"
                     value={task}
                     placeholder="Write task here"
                     onChange={(e)=>setTask(e.target.value)}
                 />
                 &nbsp;&nbsp;&nbsp;
-                <button>Add</button>
+                <button>Add Task</button>
             </form>
         </>
     )
