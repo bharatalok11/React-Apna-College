@@ -15,13 +15,19 @@ The main components are:
 
 ### Getting Started
 
-1. Install dependencies:
+1. Clone the repository : [CLONE REPO](https://github.com/bharatalok11/React-Apna-College.git)
+
+```bash
+cd part1_part2
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
-2. Start the development server:
+3. Start the development server:
 ```bash
-npm run dev
+npm run dev     
 ```
 
 
@@ -31,3 +37,10 @@ npm run dev
 - Vite 6.3.5
 
 
+<hr/>
+<div align="center">
+
+Created by [bharatalok11](https://github.com/bharatalok11)
+
+**Happy Coding! ❤️**
+</div>

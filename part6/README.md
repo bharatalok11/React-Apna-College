@@ -27,9 +27,9 @@
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository : [CLONE REPO](https://github.com/bharatalok11/React-Apna-College.git)
+
 ```bash
-git clone <repository-url>
 cd part6
 ```
 
@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-The demo will be available at `http://localhost:5173`
+4. Open the browser and navigate to `http://localhost:5173` to see the application.
 
 
 ## Folder Structure

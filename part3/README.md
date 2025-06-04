@@ -21,17 +21,22 @@ The main components are:
 
 ## Getting Started
 
-1. Install dependencies:
+1. Clone the repository : [CLONE REPO](https://github.com/bharatalok11/React-Apna-College.git)
+```bash
+cd part3
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-
+4. Open the browser and navigate to `http://localhost:5173` to see the application.
 ## Tech Stack
 
 - React 19.1.0
